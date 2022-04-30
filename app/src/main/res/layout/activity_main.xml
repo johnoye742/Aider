@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <androidx.appcompat.widget.Toolbar android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@color/red"
+    android:id="@+id/tb">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:id="@+id/tb_text"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/btn_bg"
+    android:minHeight="200dp"
+    android:minWidth="200dp"
+            android:clickable="false"
+            android:focusable="false"
+    android:id="@+id/btn_wrapper">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:background="@drawable/btn"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:minWidth="170dp"
+                android:minHeight="170dp"
+                android:textColor="@color/white"
+                android:text="@string/broadcast"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/broadcast_btn"
+				android:elevation="10dp"
+        />
+    </FrameLayout>
+</RelativeLayout>
